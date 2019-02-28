@@ -211,7 +211,7 @@ export default {
     background: #fff;
     box-shadow: 0 0 1px #ddd;
     padding: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 20px;
   }
   .index-board-item-inner {
@@ -241,5 +241,11 @@ export default {
   }
   .brack{
     flex-direction: row;
+  }
+  .lastest-news {
+    min-height: 512px;
+  }
+  .line-last{
+    margin-right: 0;
   }
 </style>
