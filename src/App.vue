@@ -132,7 +132,7 @@ body {
 .container {
   display: flex;
   flex: 1;
-  flex-direction: column;
+  /*flex-direction: column;*/
   /*margin: 0 auto;*/
 }
 </style>
