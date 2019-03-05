@@ -41,7 +41,7 @@
 </template>
 
 <script>
-  import slideShow from './SlideShow'
+  import slideShow from '../page/SlideShow'
 export default {
   name: 'HelloWorld',
   components: {
