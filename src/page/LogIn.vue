@@ -9,9 +9,8 @@
       <input class="inputPsw" type="password" v-model="psw" placeholder="请输入密码"/>
     </div>
     <div>
-      <div @click="onLogin()" style="margin-right: 50px;margin-left: 50px;width: 60%;height: 44px;background-color: aqua;display:flex;justify-content:center;align-items:center;">
+      <div @click="onLogin()" style="cursor: pointer;margin-right: 50px;margin-left: 50px;width: 60%;height: 44px;background-color: aqua;display:flex;justify-content:center;align-items:center;">
         <a>登录</a>
-
       </div>
     </div>
   </div>
