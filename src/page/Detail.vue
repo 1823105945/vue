@@ -64,7 +64,8 @@
 
 <style scoped>
   .detail-wrap{
-    width: 100%;
+    display: flex;
+    flex: 1;
     margin: 0 auto;
     overflow: hidden;
     padding-top: 20px;
@@ -92,10 +93,9 @@
     color: #fff;
   }
   .detail-right {
-    float: left;
-    display: flex;
-    flex: 1;
-    margin-left: 20px;
+    float: right;
+    margin:0px 20px;
+    ;
   }
   /*.product-board li a {*/
     /*display: block;*/

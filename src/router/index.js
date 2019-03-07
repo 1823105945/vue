@@ -20,6 +20,7 @@ export default new Router({
     {
       path: '/detail',
       name: 'Detail',
+      redirect:'/detail/analysis',
       component: Detail,
       children:[
         {
