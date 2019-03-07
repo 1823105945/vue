@@ -7,7 +7,9 @@
       <div class="sales-board-form">
         <div class="sales-board-line">
           <div class="sales-board-line-left"> 购买数量:</div>
-          <div class="sales-board-line-right">value</div>
+          <div class="sales-board-line-right">
+            <Section :selections="buyTypes" @on-change="onParamChange('buyType',$event)"></Section>
+          </div>
         </div>
         <div  class="sales-board-line">
           <div class="sales-board-line-left">产品类型:</div>
@@ -55,8 +57,63 @@
 </template>
 
 <script>
+  import Section from '../../components/Selection'
     export default {
-        name: "Analysis"
+        name: "Analysis",
+      components:{
+        Section,
+      },
+      data (){
+          return{
+            versionList: [
+              {
+                label: '客户版',
+                value: 0
+              },
+              {
+                label: '代理商版',
+                value: 1
+              },
+              {
+                label: '专家版',
+                value: 2
+              }
+            ],
+            periodList: [
+              {
+                label: '半年',
+                value: 0
+              },
+              {
+                label: '一年',
+                value: 1
+              },
+              {
+                label: '三年',
+                value: 2
+              }
+            ],
+            buyTypes: [
+              {
+                label: '入门版',
+                value: 0
+              },
+              {
+                label: '中级版',
+                value: 1
+              },
+              {
+                label: '高级版',
+                value: 2
+              }
+            ],
+          }
+      },
+      methods:{
+        onParamChange(attr, val){
+
+        }
+      }
     }
 </script>
 
