@@ -8,12 +8,15 @@
         <div class="sales-board-line">
           <div class="sales-board-line-left"> 购买数量:</div>
           <div class="sales-board-line-right">
-            <Section :selections="buyTypes" @on-change="onParamChange('buyType',$event)"></Section>
+            <Counter @on-change="onParamChange('buyNum', $event)"></Counter>
           </div>
         </div>
         <div  class="sales-board-line">
           <div class="sales-board-line-left">产品类型:</div>
-          <div class="sales-board-line-right">value</div>
+          <div class="sales-board-line-right">
+            <Section :selections="buyTypes" @on-change="onParamChange('buyType',$event)"></Section>
+
+          </div>
         </div>
           <div class="sales-board-line">
             <div class="sales-board-line-left">有效时间:</div>
@@ -58,10 +61,13 @@
 
 <script>
   import Section from '../../components/Selection'
+  import Counter from '../../components/Counter'
+
     export default {
         name: "Analysis",
       components:{
         Section,
+        Counter,
       },
       data (){
           return{
