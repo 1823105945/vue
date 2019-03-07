@@ -30,7 +30,9 @@
         </div>
         <div class="sales-board-line">
           <div class="sales-board-line-left">总价:</div>
-          <div class="sales-board-line-right">value</div>
+          <div class="sales-board-line-right">
+            <Chooser :selections="buyTypes"></Chooser>
+          </div>
         </div>
         <div style="height: 60px">
           <div style="cursor: pointer;margin:20px 20px 20px 20px;width: 60%;height: 44px;background-color: aqua;display:flex;justify-content:center;align-items:center;">
@@ -65,6 +67,7 @@
   import Section from '../../components/Selection'
   import Counter from '../../components/Counter'
   import MultiplyChooser from '../../components/MultiplyChooser'
+  import Chooser from '../../components/Chooser'
 
     export default {
         name: "Analysis",
@@ -72,6 +75,7 @@
         Section,
         Counter,
         MultiplyChooser,
+        Chooser,
       },
       data (){
           return{
