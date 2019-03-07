@@ -24,7 +24,9 @@
           </div>
         <div class="sales-board-line">
           <div class="sales-board-line-left">产品版本:</div>
-          <div class="sales-board-line-right">value</div>
+          <div class="sales-board-line-right">
+            <MultiplyChooser :selections="versionList" @on-change="onParamChange('versions',$event)"></MultiplyChooser>
+          </div>
         </div>
         <div class="sales-board-line">
           <div class="sales-board-line-left">总价:</div>
@@ -62,12 +64,14 @@
 <script>
   import Section from '../../components/Selection'
   import Counter from '../../components/Counter'
+  import MultiplyChooser from '../../components/MultiplyChooser'
 
     export default {
         name: "Analysis",
       components:{
         Section,
         Counter,
+        MultiplyChooser,
       },
       data (){
           return{
