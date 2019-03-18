@@ -42,6 +42,7 @@
   import Dialog from './components/Dialog'
   import LogIn from './page/LogIn'
   import Register from './page/Register'
+  import storage from './storage/Storage'
 export default {
   name: 'App',
 
@@ -74,6 +75,7 @@ export default {
     onSuccessLog(){
       console.log('登陆成功')
       this.isShowLogDialog = false
+      storage.state.isLogin=true;
     },
     registerSuccessLog(){
       console.log('注册成功')
